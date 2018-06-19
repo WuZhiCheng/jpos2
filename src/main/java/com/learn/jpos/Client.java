@@ -25,7 +25,7 @@ public class Client {
         Logger logger = new Logger();
         logger.addListener (new SimpleLogListener(System.out));
         ISOChannel channel = new ASCIIChannel(
-                "localhost", 9099, new ISO87APackager()
+                "localhost", 9000, new ISO87APackager()
         );
         ((LogSource)channel).setLogger (logger, "channel");
         channel.connect ();

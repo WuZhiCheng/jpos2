@@ -25,6 +25,12 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.github.kpavlov.jreactive8583</groupId>
+			<artifactId>netty-iso8583</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.jpos</groupId>
