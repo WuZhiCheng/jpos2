@@ -25,6 +25,15 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/net.sf.j8583/j8583 -->
+		<dependency>
+			<groupId>net.sf.j8583</groupId>
+			<artifactId>j8583</artifactId>
+			<version>1.12.0</version>
+		</dependency>
+
+
+
 		<dependency>
 			<groupId>com.github.kpavlov.jreactive8583</groupId>
 			<artifactId>netty-iso8583</artifactId>

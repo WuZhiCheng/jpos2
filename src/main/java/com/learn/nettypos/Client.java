@@ -2,6 +2,7 @@ package com.learn.nettypos;
 
 import com.github.kpavlov.jreactive8583.client.Iso8583Client;
 import com.solab.iso8583.IsoMessage;
+import com.solab.iso8583.IsoValue;
 import com.solab.iso8583.MessageFactory;
 
 import java.net.InetSocketAddress;
@@ -28,6 +29,7 @@ public class Client {
         client.connect();
         IsoMessage isoMessage =new IsoMessage();
         isoMessage.setBinaryBitmap(false);
+        isoMessage.setField(12,new IsoValue<>())
         client.send(isoMessage);
 
     }
